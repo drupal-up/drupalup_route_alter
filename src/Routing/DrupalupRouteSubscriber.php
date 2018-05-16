@@ -1,8 +1,4 @@
 <?php
-/**
- * @file
- * Contains \Drupal\drupalup_route_alter\Routing\RouteSubscriber.
- */
 
 namespace Drupal\drupalup_route_alter\Routing;
 
@@ -10,7 +6,7 @@ use Drupal\Core\Routing\RouteSubscriberBase;
 use Symfony\Component\Routing\RouteCollection;
 
 /**
- * Listens to the dynamic route events.
+ * Listens to the dynamic route events and enables us to alter them.
  */
 class DrupalupRouteSubscriber extends RouteSubscriberBase {
 
@@ -26,4 +22,5 @@ class DrupalupRouteSubscriber extends RouteSubscriberBase {
     $user_route->setPath('/hell');
 
   }
+
 }
